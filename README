@@ -1,0 +1,5 @@
+****** Configuracion
+
+
+****** Para correr dedse esta misma carpeta:
+java -classpath out\production\tp1 YAAM_test < test_log_5000.txt

@@ -1,0 +1,7 @@
+#millisecondsWindow
+5000
+#stat_name,OPERATION name
+requests per second,DIV SUM requests TIME_SECONDS
+requests per client,DIV SUM requests COUNT clients
+total errors,SUM errors
+10 most requested resources,TOP 10 resources
