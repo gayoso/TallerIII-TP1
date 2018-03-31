@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,24 +13,30 @@ public class RankingLogger extends GracefulRunnable {
 
     private LinkedBlockingQueue inputQueue;
 
-    private List<String> finishedLogfiles;
+    private Object finishedLogfilesLock;
     private Map<String, Integer> lines = new HashMap<>();
     private int maxLines;
     private String folderName;
+    private String finishedLogfiles;
 
-    public RankingLogger(String name, LinkedBlockingQueue queue, List<String> finishedLogfiles, int maxLines) {
+    public RankingLogger(String name, LinkedBlockingQueue queue, Object
+            finishedLogfilesLock, int maxLines) {
 
         super("RankingLogger " + name);
 
+        this.folderName = name;
         this.inputQueue = queue;
         this.maxLines = maxLines;
-        this.finishedLogfiles = finishedLogfiles;
-        this.folderName = name;
+        this.finishedLogfiles = folderName + "/temp/" +
+                "_finished_logfilenames";
+        this.finishedLogfilesLock = finishedLogfilesLock;
     }
 
     // se acumulan en memoria hasta cierto numero de errores con su cantidad de apariciones
     // si se pasa ese numero maximo, se hace un dump de los errores ordenados a un archivo
     private void saveLinesToFile() {
+
+        Logger.log(logName, "Dumping temp rank file", Logger.logLevel.INFO);
 
         try {
 
@@ -47,7 +54,14 @@ public class RankingLogger extends GracefulRunnable {
 
             String timestamp = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss_SSS").format(new Date());
             String filename = logName.split(" ")[1] + "/temp/" + Thread.currentThread().getName() +
-                    "_" + timestamp;
+                    "_" + timestamp + "-";
+            int sufix = 0;
+            File f = new File(filename + sufix);
+            while (f.exists()) {
+                sufix++;
+                f = new File(filename + sufix);
+            }
+            filename += sufix;
 
             PrintWriter fileWriter = new PrintWriter(new FileWriter(filename, true));
             for (String line : stringLines) {
@@ -56,11 +70,15 @@ public class RankingLogger extends GracefulRunnable {
             fileWriter.close();
             lines.clear();
 
-            synchronized (finishedLogfiles) {
-                finishedLogfiles.add(filename);
+            synchronized (finishedLogfilesLock) {
+                PrintWriter finishedLogfilesWriter = new PrintWriter(new
+                        FileWriter
+                        (finishedLogfiles, true));
+                finishedLogfilesWriter.println(filename);
+                finishedLogfilesWriter.close();
             }
         } catch (IOException e) {
-            Logger.log("RankingLogger " + logName, e.getMessage(), Logger.logLevel.ERROR);
+            Logger.log(logName, e.getMessage(), Logger.logLevel.ERROR);
         }
     }
 

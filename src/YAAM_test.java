@@ -111,7 +111,7 @@ public class YAAM_test {
         List<LinkedBlockingQueue> rankingQueues = new LinkedList<>();
         List<List<RankingLogger>> rankingLoggers = new LinkedList<>();
         List<List<Thread>> rankingThreads = new LinkedList<>();
-        List<String> finishedLogFiles = new LinkedList<>();
+        Object finishedLogFilesLock = new Object();
 
         /*String[] config_rankings = {"errors_ranking,^.+ .+ \\[error\\] \".+ .+ .+\" [0-9]{3} (.+)$"};*/
 
@@ -125,7 +125,7 @@ public class YAAM_test {
             rankingThreads.add(new LinkedList<>());
             for (int j = 0; j < rankingTempNumThreads; ++j) {
                 RankingLogger rankingLogger = new RankingLogger(rankingNames.get(i), rankingQueues.get(i),
-                        finishedLogFiles, rankingTempFileMaxLines);
+                        finishedLogFilesLock, rankingTempFileMaxLines);
                 rankingLoggers.get(i).add(rankingLogger);
                 Thread rankingLoggerThread = new Thread(rankingLogger);
                 rankingThreads.get(i).add(rankingLoggerThread);
@@ -141,7 +141,8 @@ public class YAAM_test {
         for (int i = 0; i < config_rankings.size(); ++i) {
             String[] splitLine = config_rankings.get(i).split(",");
 
-            rankingMergers.add(new RankingLoggerMerge(splitLine[0], finishedLogFiles,
+            rankingMergers.add(new RankingLoggerMerge(splitLine[0],
+                    finishedLogFilesLock,
                     rankingMergerSleepMilliseconds, maxErrorsToShow));
             rankingMergerThreads.add(new Thread(rankingMergers.get(i)));
             rankingMergerThreads.get(i).start();

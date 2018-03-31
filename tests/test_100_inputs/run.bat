@@ -1,0 +1,1 @@
+java -classpath ..\..\out\production\tp1 YAAM_test < test_log_100.txt

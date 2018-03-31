@@ -42,6 +42,9 @@ public class StatisticViewer extends GracefulRunnable {
             LimitedSortedSet<String> topResources = new LimitedSortedSet<>(10, new CountCommaNameComparator());
             Map<String, Integer> resources = statistics.get("resources").getStatistic();
             for (String key : resources.keySet()) {
+                if (shouldStop()) {
+                    return;
+                }
                 topResources.add(resources.get(key) + "," + key);
             }
             Logger.output("[VIEWER] 10 most requested resources: ");

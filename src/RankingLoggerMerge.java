@@ -6,19 +6,22 @@ import java.util.*;
 
 public class RankingLoggerMerge extends GracefulRunnable {
 
-    private List<String> finishedLogfiles;
+    private String finishedLogfiles;
+    private Object finishedLogfilesLock;
     private int sleepMilliseconds;
     private int numErrorsToList;
     private String folderName;
 
-    public RankingLoggerMerge(String name, List<String> finishedLogfiles,
+    public RankingLoggerMerge(String name, Object finishedLogfilesLock,
                               int sleepMilliseconds, int numErrorsToList) {
         super("RankingLoggerMerge " + name);
 
-        this.finishedLogfiles = finishedLogfiles;
+        this.folderName = name;
+        this.finishedLogfiles = folderName + "/temp/" +
+                "_finished_logfilenames";
+        this.finishedLogfilesLock = finishedLogfilesLock;
         this.sleepMilliseconds = sleepMilliseconds;
         this.numErrorsToList = numErrorsToList;
-        this.folderName = name;
     }
 
     // en vez de hacer un merge de todos los archivos generados por los
@@ -79,10 +82,33 @@ public class RankingLoggerMerge extends GracefulRunnable {
             Logger.log(logName, "Waking up", Logger.logLevel.INFO);
 
             // los archivos a mergear se sacan de la lista y despues se borra
-            List<String> currentFinishedLogFiles;
-            synchronized (finishedLogfiles) {
-                currentFinishedLogFiles = new LinkedList<>(finishedLogfiles);
-                finishedLogfiles.clear();
+            List<String> currentFinishedLogFiles = new LinkedList<>();
+            synchronized (finishedLogfilesLock) {
+                FileReader fileReader = null;
+                try {
+                    fileReader = new FileReader(finishedLogfiles);
+                BufferedReader bufferedReader = new BufferedReader(fileReader);
+                String line = null;
+                while ((line = bufferedReader.readLine()) != null) {
+                    if (!line.startsWith("#")) {
+                        currentFinishedLogFiles.add(line);
+                    }
+                }
+                bufferedReader.close();
+
+                File deleteFile = new File(finishedLogfiles);
+                deleteFile.delete();
+                } catch (FileNotFoundException e) {
+                    Logger.log(logName, "Error loading temp rank " +
+                            "filenames: " + e.getMessage(), Logger.logLevel
+                            .ERROR);
+                    currentFinishedLogFiles.clear();
+                } catch (IOException e) {
+                    Logger.log(logName, "Error loading temp rank " +
+                            "filenames: " + e.getMessage(), Logger.logLevel
+                            .ERROR);
+                    currentFinishedLogFiles.clear();
+                }
             }
 
             if (currentFinishedLogFiles.size() > 0) {
@@ -132,6 +158,8 @@ public class RankingLoggerMerge extends GracefulRunnable {
                 while (fileReaders.size() > 0 && lines.size() > 0) {
 
                     if (shouldStop()) {
+
+                        // close file readers
                         for (int i = 0; i < fileReaders.size(); ++i) {
                             try {
                                 fileReaders.get(i).close();
@@ -142,9 +170,34 @@ public class RankingLoggerMerge extends GracefulRunnable {
                             }
                         }
 
+                        // delete temp output
                         fileWriter.close();
                         File deleteOutFile = new File(outFilename);
                         deleteOutFile.delete();
+
+                        // save filenames back to file for future processing
+                        if (oldRanking != "") {
+                            currentFinishedLogFiles.remove
+                                    (currentFinishedLogFiles.size() - 1);
+                        }
+                        PrintWriter tempFilenamesWriter = null;
+                        try {
+                            tempFilenamesWriter = new PrintWriter(new
+                                    FileWriter(finishedLogfiles, true));
+                        } catch (IOException e) {
+                            Logger.log(logName,
+                                    "Error opening file after" +
+                                            "interrupt",
+                                    Logger.logLevel.ERROR);
+                        }
+                        for (int i = 0; i < currentFinishedLogFiles.size();
+                             ++i) {
+                            tempFilenamesWriter.println
+                                    (currentFinishedLogFiles.get(i));
+                        }
+                        tempFilenamesWriter.close();
+
+                        return;
                     }
 
                     // se busca el siguiente error con mas apariciones
