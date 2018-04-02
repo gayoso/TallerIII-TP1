@@ -3,30 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="60986349-fd53-4f38-a3ef-f6ebff3813cf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/caratula.docx" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_graceful_thread.png" afterPath="$PROJECT_DIR$/diagramas/activity_graceful_thread.png" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_graceful_thread.xml" afterPath="$PROJECT_DIR$/diagramas/activity_graceful_thread.xml" />
-      <change beforePath="$PROJECT_DIR$/diagramas/robustness_ranking.png" afterPath="$PROJECT_DIR$/diagramas/robustness_ranking.png" />
-      <change beforePath="$PROJECT_DIR$/diagramas/robustness_ranking.xml" afterPath="$PROJECT_DIR$/diagramas/robustness_ranking.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change beforePath="$PROJECT_DIR$/informe-tp1-95470.docx" afterPath="$PROJECT_DIR$/informe-tp1-95470.docx" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/GracefulRunnable.class" afterPath="$PROJECT_DIR$/out/production/tp1/GracefulRunnable.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/Logger.class" afterPath="$PROJECT_DIR$/out/production/tp1/Logger.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/RankingLogger$1.class" afterPath="$PROJECT_DIR$/out/production/tp1/RankingLogger$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/RankingLogger.class" afterPath="$PROJECT_DIR$/out/production/tp1/RankingLogger.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/RankingLoggerMerge.class" afterPath="$PROJECT_DIR$/out/production/tp1/RankingLoggerMerge.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/YAAM_test$1.class" afterPath="$PROJECT_DIR$/out/production/tp1/YAAM_test$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/YAAM_test.class" afterPath="$PROJECT_DIR$/out/production/tp1/YAAM_test.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/codigo.pdf" afterPath="$PROJECT_DIR$/out/production/tp1/codigo.pdf" />
-      <change beforePath="$PROJECT_DIR$/src/RankingLogger.java" afterPath="$PROJECT_DIR$/src/RankingLogger.java" />
-      <change beforePath="$PROJECT_DIR$/src/RankingLoggerMerge.java" afterPath="$PROJECT_DIR$/src/RankingLoggerMerge.java" />
-      <change beforePath="$PROJECT_DIR$/src/StatisticViewer.java" afterPath="$PROJECT_DIR$/src/StatisticViewer.java" />
-      <change beforePath="$PROJECT_DIR$/src/YAAM_test.java" afterPath="$PROJECT_DIR$/src/YAAM_test.java" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_rankings" afterPath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_rankings" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_general" afterPath="$PROJECT_DIR$/tests/test_1000_inputs/config_general" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_rankings" afterPath="$PROJECT_DIR$/tests/test_1000_inputs/config_rankings" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_general" afterPath="$PROJECT_DIR$/tests/test_100_inputs/config_general" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_rankings" afterPath="$PROJECT_DIR$/tests/test_100_inputs/config_rankings" />
-      <change beforePath="$PROJECT_DIR$/~$forme-tp1-95470.docx" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/tp1/codigo.pdf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/run.bat" afterPath="$PROJECT_DIR$/tests/test_100_inputs/run.bat" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,12 +21,10 @@
       <file leaf-file-name="YAAM_test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/YAAM_test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="0">
               <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8301#11230#0" expanded="true" />
-                <element signature="e#11229#11230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +33,7 @@
       <file leaf-file-name="RankingLogger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RankingLogger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="493">
               <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding />
             </state>
@@ -65,8 +43,8 @@
       <file leaf-file-name="RankingLoggerMerge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RankingLoggerMerge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="581">
-              <caret line="199" column="31" lean-forward="true" selection-start-line="199" selection-start-column="31" selection-end-line="199" selection-end-column="31" />
+            <state relative-caret-position="3315">
+              <caret line="199" column="31" lean-forward="false" selection-start-line="199" selection-start-column="31" selection-end-line="199" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -75,8 +53,8 @@
       <file leaf-file-name="StatisticViewer.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StatisticViewer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -85,7 +63,7 @@
       <file leaf-file-name="GracefulRunnable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GracefulRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="561">
               <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="32" />
               <folding />
             </state>
@@ -95,7 +73,7 @@
       <file leaf-file-name="Logger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="1088">
               <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
               <folding />
             </state>
@@ -377,11 +355,12 @@
       <workItem from="1522097093713" duration="817000" />
       <workItem from="1522253222665" duration="3928000" />
       <workItem from="1522461172718" duration="6900000" />
+      <workItem from="1522681157351" duration="1032000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69718000" />
+    <option name="totallyTimeSpent" value="70750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,14 +380,14 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298077" sideWeight="0.5170576" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298077" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.48294243" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298077" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298077" sideWeight="0.4978678" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29211086" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29530916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -437,13 +416,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="45" column="56" lean-forward="false" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StatisticUpdater.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -458,8 +430,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8301#11230#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -508,8 +478,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8301#11230#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -558,8 +526,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8301#11230#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -608,8 +574,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8301#11230#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -635,8 +599,6 @@
           <caret line="52" column="9" lean-forward="true" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8301#11230#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -682,10 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
           <caret line="736" column="16" lean-forward="false" selection-start-line="736" selection-start-column="16" selection-end-line="736" selection-end-column="16" />
-          <folding>
-            <element signature="e#2748#2749#0" expanded="false" />
-            <element signature="e#2780#2781#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,10 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-592">
           <caret line="248" column="11" lean-forward="false" selection-start-line="248" selection-start-column="11" selection-end-line="248" selection-end-column="11" />
-          <folding>
-            <element signature="e#7388#7389#0" expanded="false" />
-            <element signature="e#7427#7428#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -704,7 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
           <caret line="387" column="18" lean-forward="false" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -726,7 +679,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
           <caret line="1152" column="15" lean-forward="false" selection-start-line="1152" selection-start-column="15" selection-end-line="1152" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5">
           <caret line="476" column="32" lean-forward="true" selection-start-line="476" selection-start-column="32" selection-end-line="476" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -750,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
           <caret line="670" column="23" lean-forward="false" selection-start-line="670" selection-start-column="23" selection-end-line="670" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -803,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="1088">
           <caret line="68" column="9" lean-forward="false" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
           <folding />
         </state>
@@ -811,19 +761,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/YAAM_test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
+        <state relative-caret-position="0">
           <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8301#11230#0" expanded="true" />
-            <element signature="e#11229#11230#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GracefulRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
+        <state relative-caret-position="561">
           <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="32" />
           <folding />
         </state>
@@ -831,7 +779,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RankingLogger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
+        <state relative-caret-position="493">
           <caret line="38" column="14" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding />
         </state>
@@ -839,16 +787,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/RankingLoggerMerge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="199" column="31" lean-forward="true" selection-start-line="199" selection-start-column="31" selection-end-line="199" selection-end-column="31" />
+        <state relative-caret-position="3315">
+          <caret line="199" column="31" lean-forward="false" selection-start-line="199" selection-start-column="31" selection-end-line="199" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CountCommaNameComparator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StatisticViewer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
