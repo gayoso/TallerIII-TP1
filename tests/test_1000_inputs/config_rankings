@@ -1,4 +1,0 @@
-#linesPerTempFile,numThreadsPerRankingDump,rankingMergeSleepMilliseconds,rankingDisplayNum
-100,2,10000,100
-#filename,regex
-errors_ranking,^.+ .+ \[error\] ".+ .+ .+" [0-9]{3} (.+)$

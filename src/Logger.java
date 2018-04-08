@@ -45,10 +45,13 @@ public class Logger {
         try {
             logWriter = new PrintWriter(new FileWriter(filename));
 
-            String timeStamp = new SimpleDateFormat("yyyy/MM/dd/ HH:mm:ss").format(new Date());
-            logWriter.println("***************" + timeStamp + "***************");
+            String timeStamp = new SimpleDateFormat(
+                    "yyyy/MM/dd/ HH:mm:ss").format(new Date());
+            logWriter.println("***************" +
+                    timeStamp + "***************");
         } catch (IOException e) {
-            log("Logger", "Couldn't open logfile for writing", logLevel.ERROR);
+            log("Logger", "Couldn't open logfile for writing",
+                    logLevel.ERROR);
         }
     }
 

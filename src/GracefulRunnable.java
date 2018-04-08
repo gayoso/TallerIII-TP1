@@ -1,37 +1,36 @@
 public abstract class GracefulRunnable implements Runnable {
 
-    private volatile boolean keepAlive = true;
+    private volatile boolean keepAlive;
     protected String logName;
 
     public GracefulRunnable(String name) {
         this.logName = name;
+        this.keepAlive = true;
 
         Logger.log(name, "Creating object", Logger.logLevel.INFO);
     }
 
-    public void stopKeepAlive() {
+    protected boolean shouldStop() {
+        return !keepAlive;
+    }
+
+    protected void stopKeepAlive() {
         keepAlive = false;
     }
 
-    @Override
-    public void run() {
-
-        initWork();
-        while (keepAlive) {
-            doWork(); // if doWork is time consuming, call shouldStop periodically
-        }
-        endWork();
-    }
+    public abstract void start();
 
     protected void initWork() {
         Logger.log(logName,"Starting RUN", Logger.logLevel.INFO);
     }
 
-    protected abstract void doWork();
+    protected abstract void doWork() throws InterruptedException;
 
     protected void endWork() {
         Logger.log(logName,"Ending RUN", Logger.logLevel.INFO);
     }
 
-    protected boolean shouldStop() { return !keepAlive; }
+    public abstract void stop();
+
+    public abstract void join() throws InterruptedException;
 }

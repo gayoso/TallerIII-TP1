@@ -1,6 +1,6 @@
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class StatisticUpdater extends GracefulRunnable {
+public class StatisticUpdater extends GracefulRunnableThread {
 
     private LinkedBlockingQueue inputQueue;
     private Statistic myStatistic;
@@ -13,18 +13,14 @@ public class StatisticUpdater extends GracefulRunnable {
     }
 
     @Override
-    protected void doWork() {
+    protected void doWork() throws InterruptedException {
 
         Logger.log(logName, "Waiting for input", Logger.logLevel.INFO);
 
-        try {
-            String value = inputQueue.take().toString();
-            Logger.log(logName, "Recibi de la cola: " + value, Logger.logLevel.INFO);
+        String value = inputQueue.take().toString();
+        Logger.log(logName, "Recibi de la cola: " + value,
+                Logger.logLevel.INFO);
 
-            myStatistic.updateStatistic(value);
-
-        } catch (InterruptedException e) {
-            Logger.log(logName, "I was interrupted", Logger.logLevel.INFO);
-        }
+        myStatistic.updateStatistic(value);
     }
 }

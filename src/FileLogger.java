@@ -5,29 +5,33 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class FileLogger extends GracefulRunnable {
+public class FileLogger extends GracefulRunnableThread {
 
     private LinkedBlockingQueue inputQueue;
 
-    private String filename;
+    private String fileName;
+    private String folderName;
     private PrintWriter fileWriter;
 
     public FileLogger(String name, LinkedBlockingQueue queue) {
         super("FileLogger " + name);
         this.inputQueue = queue;
-        this.filename = name;
+        this.folderName = name;
+        this.fileName = this.folderName + "/" + name;
     }
 
     @Override
     protected void initWork() {
 
         try {
-            if (!Files.exists(Paths.get(filename))) {
-                Files.createDirectory(Paths.get(filename));
+            if (!Files.exists(Paths.get(folderName))) {
+                Files.createDirectory(Paths.get(folderName));
             }
-            fileWriter = new PrintWriter(new FileWriter(filename + "/" + filename, true));
+            fileWriter = new PrintWriter(new FileWriter(fileName,
+                    true));
         } catch (IOException e) {
-            Logger.log(logName, "Couldn't create file: " + filename + "/" + filename, Logger.logLevel.ERROR);
+            Logger.log(logName, "Couldn't create file: " + fileName,
+                    Logger.logLevel.ERROR);
             fileWriter = null;
         }
 
@@ -35,19 +39,15 @@ public class FileLogger extends GracefulRunnable {
     }
 
     @Override
-    protected void doWork() {
+    protected void doWork() throws InterruptedException {
 
         Logger.log(logName, "Waiting for input", Logger.logLevel.INFO);
 
-        try {
-            String line = inputQueue.take().toString();
-            Logger.log(logName, "Recibi de la cola: " + line, Logger.logLevel.INFO);
+        String line = inputQueue.take().toString();
+        Logger.log(logName, "Recibi de la cola: " + line,
+                Logger.logLevel.INFO);
 
-            fileWriter.println(line);
-
-        } catch (InterruptedException e) {
-            Logger.log(logName, "I was interrupted", Logger.logLevel.INFO);
-        }
+        fileWriter.println(line);
     }
 
     @Override

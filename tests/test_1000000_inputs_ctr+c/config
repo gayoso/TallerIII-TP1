@@ -1,0 +1,84 @@
+{
+	"logLevel": 0,
+	"parserNumThreads": 20,
+	"maxTaskPoolSize": 2,
+	
+	"config_statistics": [
+	
+		{ 
+			"name": "requests", 
+			"regex": "^(.+ .+ \\[.+\\] \".+ .+ .+\" [0-9]{3} .+)$"
+		},
+		{ 
+			"name": "clients", 
+			"regex": "^(.+) .+ \\[.+\\] \".+ .+ .+\" [0-9]{3} .+$"
+		},
+		{ 
+			"name": "errors", 
+			"regex": "^.+ .+ \\[(error)\\] \".+ .+ .+\" [0-9]{3} .+$"
+		},
+		{ 
+			"name": "resources", 
+			"regex": "^.+ .+ \\[.+\\] \".+ (.+) .+\" [0-9]{3} .+$"
+		}
+	
+	],
+	
+	"config_statistics_viewer": {
+	
+		"millisecondsWindow": 5000,
+		
+		"statistics": [
+			
+			{
+				"name": "requests per second",
+				"operation": "DIV SUM requests TIME_SECONDS"
+			},
+			{
+				"name": "requests per client",
+				"operation": "DIV SUM requests COUNT clients"
+			},
+			{
+				"name": "total errors",
+				"operation": "SUM errors"
+			},
+			{
+				"name": "10 most requested resources",
+				"operation": "TOP 10 resources"
+			}
+			
+		]
+	
+	},
+	
+	"config_loggers": [
+	
+		{
+			"name": "full_log",
+			"regex": "^(.+ .+ \\[.+\\] \".+ .+ .+\" [0-9]{3} .+)$"
+		},
+		{
+			"name": "error_log",
+			"regex": "^.+ (.+) \\[error\\] \".+ .+ .+\" [0-9]{3} (.+)$"
+		}
+		
+	],
+	
+	"config_rankings": {
+	
+		"linesPerTempFile": 200,
+		"ocurrancesPerTempFile": 1000,
+		"numthreadsPerRankingDump": 2,
+		"rankingMergeSleepMilliseconds": 10000,
+		"rankingDisplayNum": 100,
+		
+		"rankings":	[
+			
+			{
+				"name": "errors_ranking",
+				"regex": "^.+ .+ \\[error\\] \".+ .+ .+\" [0-9]{3} (.+)$"
+			}
+			
+		]
+	}
+}

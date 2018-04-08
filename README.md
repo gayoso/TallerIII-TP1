@@ -18,7 +18,7 @@ config_statistics_viewer
 Los tests ya tienen sus archivos de configuracion seteados.
 
 ## Para correr el Monitor (modificar paths segun corresponda):
-java -classpath out\production\tp1 YAAM_test < test_log_5000.txt
+java -classpath out\production\tp1 YAAM < test_log_5000.txt
 
 ## Tests
 En el directiorio "tests" hay cuatro subcarpetas con casos de prueba con sus entradas y configuracion.

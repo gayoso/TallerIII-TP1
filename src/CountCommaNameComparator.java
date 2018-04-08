@@ -1,7 +1,8 @@
 import java.util.Comparator;
 
 
-// es un comparador para string de la forma "numero,string" por ejemplo "3,hola"
+// es un comparador para string de la forma "numero,string"
+// por ejemplo "3,hola"
 public class CountCommaNameComparator implements Comparator<String> {
     @Override
     public int compare(String o1, String o2) {

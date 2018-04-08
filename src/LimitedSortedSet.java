@@ -2,7 +2,8 @@ import java.util.Collection;
 import java.util.Comparator;
 import java.util.TreeSet;
 
-// un sorted set que automaticamente borra elementos de si mismo si se pasa del maximo
+// un sorted set que automaticamente borra elementos
+// de si mismo si se pasa del maximo
 class LimitedSortedSet<E> extends TreeSet<E> {
 
     private int maxSize;
@@ -29,10 +30,6 @@ class LimitedSortedSet<E> extends TreeSet<E> {
     @Override
     public boolean add( E o ) {
         boolean added =  super.add( o );
-        /*if( size() > maxSize ) {
-            E firstToRemove = (E)toArray( )[maxSize];
-            removeAll( tailSet( firstToRemove ) );
-        }*/
         while (size() > maxSize) {
             remove(last());
         }
