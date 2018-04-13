@@ -1,0 +1,1 @@
+find -regextype posix-egrep -type f -regex '.*\.(html|prop|java)' | sort -r |  xargs -- a2ps -q -2 -Av --toc --line-numbers=1 --tabsize=2 --header='[75.61] Taller de Programacion III' --left-footer='%D{%c}' --footer='Padron 95470 (curso 1.2018)  TP1 - YAAM (reentrega 12/04/2018)' -g -o - | ps2pdf - codigo.pdf

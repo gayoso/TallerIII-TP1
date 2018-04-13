@@ -2,81 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60986349-fd53-4f38-a3ef-f6ebff3813cf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_8_2.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Config.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ConfigGeneral.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ConfigNameOperation.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ConfigNameRegex.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ConfigRankings.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/ConfigStatisticsViewer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GracefulRunnableTask.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/GracefulRunnableThread.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Monitor.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/YAAM.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/codigo.pdf" afterPath="$PROJECT_DIR$/codigo.pdf" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_file_logger.png" afterPath="$PROJECT_DIR$/diagramas/activity_file_logger.png" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_file_logger.xml" afterPath="$PROJECT_DIR$/diagramas/activity_file_logger.xml" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_graceful_thread.png" afterPath="$PROJECT_DIR$/diagramas/activity_graceful_thread.png" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_graceful_thread.xml" afterPath="$PROJECT_DIR$/diagramas/activity_graceful_thread.xml" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_ranking.png" afterPath="$PROJECT_DIR$/diagramas/activity_ranking.png" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_ranking.xml" afterPath="$PROJECT_DIR$/diagramas/activity_ranking.xml" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_statistics.png" afterPath="$PROJECT_DIR$/diagramas/activity_statistics.png" />
-      <change beforePath="$PROJECT_DIR$/diagramas/activity_statistics.xml" afterPath="$PROJECT_DIR$/diagramas/activity_statistics.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/CountCommaNameComparator.class" afterPath="$PROJECT_DIR$/out/production/tp1/CountCommaNameComparator.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/FileLogger.class" afterPath="$PROJECT_DIR$/out/production/tp1/FileLogger.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/GracefulRunnable.class" afterPath="$PROJECT_DIR$/out/production/tp1/GracefulRunnable.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/LimitedSortedSet.class" afterPath="$PROJECT_DIR$/out/production/tp1/LimitedSortedSet.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/Logger.class" afterPath="$PROJECT_DIR$/out/production/tp1/Logger.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/Parser.class" afterPath="$PROJECT_DIR$/out/production/tp1/Parser.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/RankingLogger$1.class" afterPath="$PROJECT_DIR$/out/production/tp1/RankingLogger$1.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/RankingLogger.class" afterPath="$PROJECT_DIR$/out/production/tp1/RankingLogger.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/RankingLoggerMerge.class" afterPath="$PROJECT_DIR$/out/production/tp1/RankingLoggerMerge.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/StatisticUpdater.class" afterPath="$PROJECT_DIR$/out/production/tp1/StatisticUpdater.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/StatisticViewer.class" afterPath="$PROJECT_DIR$/out/production/tp1/StatisticViewer.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/YAAM_test$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/tp1/YAAM_test.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/CountCommaNameComparator.java" afterPath="$PROJECT_DIR$/src/CountCommaNameComparator.java" />
-      <change beforePath="$PROJECT_DIR$/src/FileLogger.java" afterPath="$PROJECT_DIR$/src/FileLogger.java" />
-      <change beforePath="$PROJECT_DIR$/src/GracefulRunnable.java" afterPath="$PROJECT_DIR$/src/GracefulRunnable.java" />
-      <change beforePath="$PROJECT_DIR$/src/LimitedSortedSet.java" afterPath="$PROJECT_DIR$/src/LimitedSortedSet.java" />
-      <change beforePath="$PROJECT_DIR$/src/Logger.java" afterPath="$PROJECT_DIR$/src/Logger.java" />
-      <change beforePath="$PROJECT_DIR$/src/Parser.java" afterPath="$PROJECT_DIR$/src/Parser.java" />
-      <change beforePath="$PROJECT_DIR$/src/RankingLogger.java" afterPath="$PROJECT_DIR$/src/RankingLogger.java" />
-      <change beforePath="$PROJECT_DIR$/src/RankingLoggerMerge.java" afterPath="$PROJECT_DIR$/src/RankingLoggerMerge.java" />
-      <change beforePath="$PROJECT_DIR$/src/StatisticUpdater.java" afterPath="$PROJECT_DIR$/src/StatisticUpdater.java" />
-      <change beforePath="$PROJECT_DIR$/src/StatisticViewer.java" afterPath="$PROJECT_DIR$/src/StatisticViewer.java" />
-      <change beforePath="$PROJECT_DIR$/src/YAAM_test.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/config_general" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/config_loggers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/config_rankings" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/config_statistics" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/config_statistics_viewer" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/run.bat" afterPath="$PROJECT_DIR$/tests/test_1000000_inputs/run.bat" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs/run.sh" afterPath="$PROJECT_DIR$/tests/test_1000000_inputs/run.sh" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_general" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_loggers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_rankings" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_statistics" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/config_statistics_viewer" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/run.bat" afterPath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/run.bat" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/run.sh" afterPath="$PROJECT_DIR$/tests/test_1000000_inputs_ctr+c/run.sh" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_general" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_loggers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_rankings" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_statistics" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/config_statistics_viewer" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/run.bat" afterPath="$PROJECT_DIR$/tests/test_1000_inputs/run.bat" />
-      <change beforePath="$PROJECT_DIR$/tests/test_1000_inputs/run.sh" afterPath="$PROJECT_DIR$/tests/test_1000_inputs/run.sh" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_general" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_loggers" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_rankings" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_statistics" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/config_statistics_viewer" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/run.bat" afterPath="$PROJECT_DIR$/tests/test_100_inputs/run.bat" />
-      <change beforePath="$PROJECT_DIR$/tests/test_100_inputs/run.sh" afterPath="$PROJECT_DIR$/tests/test_100_inputs/run.sh" />
-      <change beforePath="$PROJECT_DIR$/tp1.iml" afterPath="$PROJECT_DIR$/tp1.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -256,7 +182,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/randexp_github/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-4" />
     <option name="width" value="1932" />
     <option name="height" value="1176" />
@@ -474,12 +400,12 @@
       <workItem from="1522803365899" duration="167000" />
       <workItem from="1523029190061" duration="2550000" />
       <workItem from="1523110985248" duration="21729000" />
-      <workItem from="1523199788832" duration="11375000" />
+      <workItem from="1523199788832" duration="11999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106571000" />
+    <option name="totallyTimeSpent" value="107195000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,7 +417,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />

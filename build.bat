@@ -1,1 +1,1 @@
-javac src\* -d out\production\tp1
+javac src\* -d out\production\tp1 -cp lib\gson-2.8.2.jar
